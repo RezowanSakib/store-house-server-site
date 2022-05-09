@@ -49,7 +49,7 @@ async function run() {
       const updatedDoc = {
         $set: {
           suplier: updatedProduct.suplierName,
-          qantity: updatedProduct.quantity,
+          quantity: updatedProduct.quantity,
         },
       };
       const result = await productCollection.updateOne(
